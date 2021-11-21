@@ -1,0 +1,27 @@
+{
+    "name": "Github Quick Launch",
+    "description": "Launch github links quickly",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_title": "Launch github.com links quickly",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/logo.png",
+            "32": "/images/logo_32.png",
+            "48": "/images/logo_48.png",
+            "128": "/images/logo_128.png"
+        }
+    },
+    "options_page": "options.html",
+    "icons": {
+        "16": "/images/logo.png",
+        "32": "/images/logo_32.png",
+        "48": "/images/logo_48.png",
+        "128": "/images/logo_128.png"
+      }
+}
