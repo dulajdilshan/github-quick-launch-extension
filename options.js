@@ -8,5 +8,6 @@ chrome.storage.sync.get("GITHUB_REPO", ({ GITHUB_REPO }) => {
 
 saveOptionsBtn.addEventListener("click", (event) => {
     chrome.storage.sync.set({ GITHUB_REPO: githubRepoInput.value });
+    alert("Options saved");
 })
 
