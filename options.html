@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div>
-        <h1>Options</h1>
-      <p>Edit your github repository</p>
-    </div>
-    <div>
-        <input type="text" id="githubRepo">
-        <button id="saveOptions">Save</button>
-    </div>
-  </body>
-  <script src="options.js"></script>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div>
+    <h2>
+      <a class="a-link-back" href="popup.html"><i class="fa fa-angle-left"></i></a>
+      Options
+    </h2>
+    <p>Edit your github repository</p>
+    <p>Ex: ballerina-platform/ballerina-lang</p>
+  </div>
+  <div>
+    <input type="text" id="githubRepo">
+    <button class="save-options-btn" id="saveOptions">Save</button>
+  </div>
+</body>
+<script src="options.js"></script>
+
 </html>

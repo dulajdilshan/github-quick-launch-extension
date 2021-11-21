@@ -2,17 +2,35 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="container">
-        <label for="issueNumerInput">Number:</label>
-        <input type="text" id="issueNumerInput" />
-        <a id="linkForIssuePage" href="" target="_blank">Go to issue</a>
-        <a id="linkForPRPage" href="" target="_blank">Go to PR</a>
-    </div>
-    <script src="popup.js"></script>
+        <div class="row">
+            <div class="column col-align-right">
+                <a class="options-btn" id="optionsBtn" href="options.html"><i class="fa fa-cog"></i></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h4 class="repo-name">ballerina-platform/ballerina-lang
+                    <a class="a-link-repo" id="linkForIssuePage" href="" target="_blank"><i
+                            class="fa fa-external-link"></i></a>
+                </h4>
+
+            </div>
+        </div>
+        <p>Please enter the issue or pull request ID</p>
+        <p>Ex: 32478</p>
+        <input type="number" id="issueNumerInput" />
+        <a class="a-link" id="linkForIssuePage" href="" target="_blank"><i class="fa fa-external-link"></i>
+            Issue</a>
+        <a class="a-link" id="linkForPRPage" href="" target="_blank"><i class="fa fa-external-link"></i> PR</a>
+        <script src="popup.js"></script>
 </body>
 
 </html>
