@@ -1,3 +1,11 @@
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+let brwsr;
+if (isFirefox && browser !== undefined) {
+    brwsr = browser;
+} else {
+    brwsr = chrome;
+}
 
 const GITHUB_BASE_URL = "https://github.com";
 const PREFIX_issues = "issues";
@@ -17,7 +25,7 @@ userInput.addEventListener("change", (event) => {
     linkForPRPage.href = githubPRLink;
 });
 
-chrome.storage.sync.get("GITHUB_REPO", ({ GITHUB_REPO }) => {
+brwsr.storage.local.get("GITHUB_REPO", ({ GITHUB_REPO }) => {
     githubRepo = GITHUB_REPO;
     linkForRepoPage.href = createUri(GITHUB_BASE_URL, githubRepo);
     document.getElementById("repoName").innerHTML = githubRepo;

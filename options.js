@@ -1,13 +1,22 @@
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+let brwsr;
+if (isFirefox && browser !== undefined) {
+    brwsr = browser;
+} else {
+    brwsr = chrome;
+}
+
 let githubRepoInput = document.getElementById("githubRepo");
 let saveOptionsBtn = document.getElementById("saveOptions");
 
-chrome.storage.sync.get("GITHUB_REPO", ({ GITHUB_REPO }) => {
+brwsr.storage.local.get("GITHUB_REPO", ({ GITHUB_REPO }) => {
     githubRepoInput.value = GITHUB_REPO;
 });
 
 
 saveOptionsBtn.addEventListener("click", (event) => {
-    chrome.storage.sync.set({ GITHUB_REPO: githubRepoInput.value });
+    brwsr.storage.local.set({ GITHUB_REPO: githubRepoInput.value });
     alert("Options saved");
 })
 
