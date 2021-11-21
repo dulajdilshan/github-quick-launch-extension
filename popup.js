@@ -7,6 +7,7 @@ let githubRepo = "";
 let userInput = document.getElementById("issueNumerInput");
 let linkForIssuePage = document.getElementById("linkForIssuePage");
 let linkForPRPage = document.getElementById("linkForPRPage");
+let linkForRepoPage = document.getElementById("linkForRepoPage");
 
 userInput.addEventListener("change", (event) => {
     let userInputValue = event.target.value;
@@ -18,6 +19,8 @@ userInput.addEventListener("change", (event) => {
 
 chrome.storage.sync.get("GITHUB_REPO", ({ GITHUB_REPO }) => {
     githubRepo = GITHUB_REPO;
+    linkForRepoPage.href = createUri(GITHUB_BASE_URL, githubRepo);
+    document.getElementById("repoName").innerHTML = githubRepo;
 });
 
 // utils
