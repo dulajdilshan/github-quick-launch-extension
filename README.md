@@ -2,6 +2,10 @@
 
 Quick launcher extension for Github issues and PRs
 
+# Web Store links
+* Chrome - _pending_
+* Firefox - _pending_
+
 ## Features
 1. Go to an issue by simply typing the issue number and cliking the `issue` button
 2. Go to a PR by simply typing the PR number and clicking the `PR` button
