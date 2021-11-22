@@ -6,6 +6,8 @@ Quick launcher extension for Github issues and PRs
 * Chrome - _pending_
 * Firefox - _pending_
 
+Please refer to [Wiki Page](https://github.com/dulajdilshan/github-quick-launcher-extension/wiki) to add the extension to your browsers with developer mode
+
 ## Features
 1. Go to an issue by simply typing the issue number and cliking the `issue` button
 2. Go to a PR by simply typing the PR number and clicking the `PR` button
