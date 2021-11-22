@@ -1,5 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
+    font-size: medium;
 }
 
 .container {
@@ -44,6 +45,7 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: medium;
 }
 
 .a-link {
@@ -112,5 +114,5 @@ input[type="text"] {
     background-color: #d4d1d1d5;
     border-radius: 5px;
     padding: 5px 5px;
-    font-size: small;
+    font-size: medium;
 }
