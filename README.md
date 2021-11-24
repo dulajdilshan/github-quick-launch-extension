@@ -3,7 +3,7 @@
 Quick launcher extension for Github issues and PRs
 
 # Web Store links
-* Chrome - _pending_
+* Chrome - https://chrome.google.com/webstore/detail/github-quick-launch/aeekmjpbhkmkdfibpbggidfcdcbbajae/related?hl=en
 * Firefox - https://addons.mozilla.org/en-US/firefox/addon/github-quick-launch/
 
 Please refer to [Wiki Page](https://github.com/dulajdilshan/github-quick-launcher-extension/wiki) to add the extension to your browsers with developer mode
