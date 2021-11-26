@@ -1,4 +1,4 @@
-# Github Quick Launcher Web Extension
+# Github Quick Launch Web Extension
 
 Quick launcher extension for Github issues and PRs
 
