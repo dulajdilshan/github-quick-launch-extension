@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: medium;
+    width: 250px;
 }
 
 .container {
